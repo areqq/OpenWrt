@@ -2,7 +2,7 @@
 
 ## Jak sprawnie zainstalowć OpenWrt z macos
 
-Idea jest prosta. Bootujemy Mikrotika z sieci, opala się OpenWrt w RAM i z niego flashujemy.
+Idea jest prosta. Bootujemy Mikrotika z sieci, odpala się OpenWrt w RAM i z niego flashujemy.
 
 Instalujemy serwer dhcp/tftp + pakiet iproute2 by mieć ip jak na linuxie. 
 
@@ -49,11 +49,12 @@ dnsmasq-tftp: sent /Users/areq/Downloads/Mikrotik/initramfs.bin to 192.168.1.135
 Jak przestanie się nam pingować ip który pobrał z DHCP - w moim przypadku 192.168.1.135 przepisany się na Mikrotiku do portu LAN1.
 
 192.168.1.1 powinien odpowiadać.
-Pobieramy najnowszy obraz i kopiujemy ssh go na Mikrotika.
+Pobieramy najnowszy obraz i kopiujemy go ssh na Mikrotika.
 
 ```
 cat openwrt-21.02-snapshot-r16847-f8282da11e-ramips-mt7621-mikrotik_routerboard-760igs-squashfs-sysupgrade.bin | ssh root@192.168.1.1 'cat - > /tmp/routerboard-760igs-squashfs-sysupgrade.bin'
 ```
+
 logujemy się na root@192.168.1.1 i robimy sysupgrade:
 
 ```
