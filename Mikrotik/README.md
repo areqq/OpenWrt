@@ -46,7 +46,8 @@ dnsmasq-dhcp: 3271846261 sent size:  4 option:  3 router  192.168.1.10
 dnsmasq-tftp: sent /Users/areq/Downloads/Mikrotik/initramfs.bin to 192.168.1.135
 ```
 
-Jak przestanie się nam pingować ip który pobrał z DHCP - w moim przypadku 192.168.1.135 przepisany się na Mikrotiku do portu LAN1.
+Jak przestanie się nam pingować ip który pobrał z DHCP - w moim przypadku 192.168.1.135 
+przepinamy kabelek na Mikrotiku do portu WAN do LAN1.
 
 192.168.1.1 powinien odpowiadać.
 Pobieramy najnowszy obraz i kopiujemy go ssh na Mikrotika.
