@@ -2,6 +2,8 @@
 
 ## Jak sprawnie zainstalowć OpenWrt z macos
 
+Idea jest prosta. Bootujemy Mikrotika z sieci, opala się OpenWrt w RAM i z niego flashujemy.
+
 Instalujemy serwer dhcp/tftp + pakiet iproute2 by mieć ip jak na linuxie. 
 
 ```
